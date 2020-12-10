@@ -2,7 +2,7 @@ FROM node:alpine3.12 as builder
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
-RUN  apk add --no-cache  git xdg-utils\
+RUN  apk add --no-cache  git\
     && mkdir /pixiv\
     && git clone --depth=1  https://github.com/LoveLiveSunshine/pixiv.moe /pixiv\
     && cd pixiv\
