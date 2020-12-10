@@ -1,0 +1,8 @@
+version: '3'
+services:
+  pixiv:
+    image: scjtqs/pixiv:test
+    container_name: pixiv.moe
+    restart: always
+    ports:
+      - 8880:80
